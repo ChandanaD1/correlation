@@ -7,7 +7,7 @@ import plotly.express as px
 # to use co-coef
 import numpy
 
-df1 = pd.read_csv("csvfiles/Coffee.csv")
+df1 = pd.read_csv("Coffee.csv")
 coffee = df1["Coffee in ml"].tolist()
 sleep = df1["sleep in hours"].tolist()
 
@@ -17,7 +17,7 @@ graph1.show()
 correlation1 = numpy.corrcoef(coffee,sleep)
 print(correlation1[0,1])
 
-df2 = pd.read_csv("csvfiles/Marks.csv")
+df2 = pd.read_csv("Marks.csv")
 marks = df2["Marks In Percentage"].tolist()
 days = df2["Days Present"].tolist()
 
